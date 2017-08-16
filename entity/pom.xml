@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+        <groupId>com.wyz.springcloud-server2</groupId>
+        <version>1.0-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>entity</artifactId>
+
+    <!-- 用于上传远程私服的配置 -->
+    <distributionManagement>
+        <repository>
+            <id>weidai.releases</id>
+            <name>Releases</name>
+            <url>http://192.168.17.252:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>weidai.snapshots</id>
+            <name>Snapshots</name>
+            <url>http://192.168.17.252:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+
+    </distributionManagement>
+</project>
